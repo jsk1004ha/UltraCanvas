@@ -2,7 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="theme-color" content="#ffffff" />
     <title>Whitevoid Canvas</title>
   </head>
@@ -17,6 +17,12 @@
         </div>
       </section>
 
+      <section class="panel mode-panel">
+        <button id="drawMode" class="mode-button active" type="button">✏️ 그리기</button>
+        <button id="moveMode" class="mode-button" type="button">✋ 이동</button>
+        <span class="mode-help" id="modeHelp">손가락/마우스로 선을 그립니다</span>
+      </section>
+
       <section class="panel controls">
         <label>
           <span>이름</span>
@@ -28,7 +34,7 @@
         </label>
         <label class="range-label">
           <span>두께</span>
-          <input id="width" type="range" min="1" max="40" value="4" />
+          <input id="width" type="range" min="1" max="40" value="8" />
         </label>
         <button id="spawn" type="button">랜덤 이동</button>
         <button id="copy" type="button">좌표 복사</button>
@@ -45,7 +51,8 @@
     </main>
 
     <aside class="toast">
-      드래그: 그림 · Shift/Alt+드래그: 이동 · 휠: 줌 · 방향키: 이동
+      PC: 그리기 모드에서 드래그 · 이동 모드/Shift/Alt+드래그로 이동 · 휠 줌<br />
+      모바일: 그리기/이동 버튼을 바꿔 사용
     </aside>
 
     <script type="module" src="/src/main.js"></script>
