@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Whitevoid Canvas</title>
+  </head>
+  <body>
+    <canvas id="world" aria-label="Whitevoid Canvas"></canvas>
+
+    <main class="hud" aria-label="Canvas controls">
+      <section class="panel title-panel">
+        <div>
+          <h1>Whitevoid Canvas</h1>
+          <p>1,000,000,000 × 1,000,000,000 px virtual world</p>
+        </div>
+      </section>
+
+      <section class="panel controls">
+        <label>
+          <span>이름</span>
+          <input id="name" type="text" maxlength="32" placeholder="anonymous" autocomplete="off" />
+        </label>
+        <label>
+          <span>색</span>
+          <input id="color" type="color" value="#111111" />
+        </label>
+        <label class="range-label">
+          <span>두께</span>
+          <input id="width" type="range" min="1" max="40" value="4" />
+        </label>
+        <button id="spawn" type="button">랜덤 이동</button>
+        <button id="copy" type="button">좌표 복사</button>
+        <button id="clearLocal" type="button">화면 캐시 비우기</button>
+      </section>
+
+      <section class="panel stats">
+        <div>좌표 <strong id="pos">-</strong></div>
+        <div>청크 <strong id="chunk">-</strong></div>
+        <div>줌 <strong id="zoom">1x</strong></div>
+        <div>불러온 선 <strong id="loaded">0</strong></div>
+        <div>상태 <strong id="status">초기화</strong></div>
+      </section>
+    </main>
+
+    <aside class="toast">
+      드래그: 그림 · Shift/Alt+드래그: 이동 · 휠: 줌 · 방향키: 이동
+    </aside>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
