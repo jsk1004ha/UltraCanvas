@@ -17,7 +17,7 @@
 <section class="panel controls"><label><span>이름</span><input id="name" type="text" maxlength="32" placeholder="anonymous" /></label><label><span>색</span><input id="color" type="color" value="#111111" /></label><label><span>두께</span><input id="width" type="range" min="2" max="42" value="10" /></label><label><span>X</span><input id="goX" type="number" placeholder="x" /></label><label><span>Y</span><input id="goY" type="number" placeholder="y" /></label><button id="goto">이동</button><button id="spawn">랜덤</button><button id="copy">좌표</button><button id="reload">동기화</button></section>
 <section class="panel stats"><div>상태 <strong id="status">start</strong></div><div>선 <strong id="count">0</strong></div><div>저장대기 <strong id="pending">0</strong></div><div>좌표 <strong id="pos">-</strong></div><div>줌 <strong id="zoom">1x</strong></div><div>청크 <strong id="chunk">-</strong></div></section>
 </main>
-<aside class="help">화면 좌표는 음수를 지원하지만 DB에는 +500M 오프셋으로 저장됩니다. 동기화는 카메라 위치를 바꾸지 않습니다.</aside>
-<script src="/app.js"></script>
+<aside class="help">핀치 줌은 두 손가락으로 동작합니다. 그리기 중 두 번째 손가락이 들어오면 그리기는 취소되고 핀치로 전환됩니다.</aside>
+<script src="/app.js?v=8"></script>
 </body>
 </html>
