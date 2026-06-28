@@ -1,10 +1,10 @@
 {
   "name": "ultra-canvas",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "description": "A huge online white canvas backed by Supabase.",
   "scripts": {
-    "build": "mkdir -p dist && cp index.html dist/index.html",
+    "build": "mkdir -p dist && cp index.html app.js dist/",
     "dev": "python3 -m http.server 5173",
     "preview": "python3 -m http.server 4173 -d dist"
   }
